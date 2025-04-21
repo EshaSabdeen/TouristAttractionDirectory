@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Attractions>
+   <Region>
+      <RegionName>West Malaysia</RegionName>
+      <Attraction>
+         <PlaceID>JHR002</PlaceID>
+         <Name>Desaru Coast Adventure Waterpark</Name>
+         <City>Desaru</City>
+         <State>Johor</State>
+         <Description>Splash into fun with thrilling slides, wave pools, and family zones in Johor’s premier waterpark.</Description>
+         <OpeningHours>Thu–Sun: 10:00 AM – 6:00 PM | Closed Mon–Wed</OpeningHours>
+         <Category>Recreational</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM95</Price>
+         <Image>images/JHR_desaru.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>JHR001</PlaceID>
+         <Name>Legoland Malaysia</Name>
+         <City>Iskandar Puteri</City>
+         <State>Johor</State>
+         <Description>Experience LEGO-themed rides, shows, and water fun in Malaysia’s top family resort.</Description>
+         <OpeningHours>Mon, Thu–Sun: 10:00 AM – 6:00 PM | Tue: 10:00 AM – 6:00 PM | Closed Wed</OpeningHours>
+         <Category>Entertainment</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM199</Price>
+         <Image>images/JHR_legoland.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>JHR003</PlaceID>
+         <Name>Kota Tinggi Firefly Park</Name>
+         <City>Kota Tinggi</City>
+         <State>Johor</State>
+         <Description>Witness glowing fireflies along tranquil mangrove rivers under the night sky.</Description>
+         <OpeningHours>1:00 PM – 11:00 PM</OpeningHours>
+         <Category>Nature</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM20</Price>
+         <Image>images/JHR_fireflyPark.png</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>KL001</PlaceID>
+         <Name>Zoo Negara</Name>
+         <City>Kuala Lumpur</City>
+         <State>Selangor</State>
+         <Description>Meet over 5,000 animals, including pandas, in Malaysia’s national zoo.</Description>
+         <OpeningHours>9:00 AM – 5:00 PM</OpeningHours>
+         <Category>Educational</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM48</Price>
+         <Image>images/KL_ZooNegara.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>KL002</PlaceID>
+         <Name>Kuala Lumpur Bird Park</Name>
+         <City>Kuala Lumpur</City>
+         <State>Federal Territory of Kuala Lumpur</State>
+         <Description>Explore the world’s largest free-flight aviary with exotic birds all around you.</Description>
+         <OpeningHours>9:00 AM – 5:30 PM</OpeningHours>
+         <Category>Educational</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM45</Price>
+         <Image>images/KL_BirdPark.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>KL003</PlaceID>
+         <Name>Aquaria KLCC</Name>
+         <City>Kuala Lumpur</City>
+         <State>Federal Territory of Kuala Lumpur</State>
+         <Description>Journey through ocean tunnels and interactive exhibits at KL’s top aquarium.</Description>
+         <OpeningHours>10:00 AM – 8:00 PM</OpeningHours>
+         <Category>Entertainment</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM49</Price>
+         <Image>images/KL_AquariaKLCC.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>KL004</PlaceID>
+         <Name>Central Market</Name>
+         <City>Kuala Lumpur</City>
+         <State>Federal Territory of Kuala Lumpur</State>
+         <Description>Explore a cultural landmark with local crafts, food, and heritage art.</Description>
+         <OpeningHours>10:00 AM – 10:00 PM</OpeningHours>
+         <Category>Cultural</Category>
+         <Ticket>Yes</Ticket>
+         <Price>Free</Price>
+         <Image>images/KL_CentralMarket.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>LGK001</PlaceID>
+         <Name>Langkawi SkyCab &amp; Sky Bridge</Name>
+         <City>Langkawi</City>
+         <State>Kedah</State>
+         <Description>Ride a cable car to stunning views and cross the iconic sky bridge above the rainforest.</Description>
+         <OpeningHours>Daily: 9:30 AM – 6:00 PM (Wed: starts 12:30 PM; Peak up to 10:00 PM)</OpeningHours>
+         <Category>Adventure</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM55</Price>
+         <Image>images/LKW_skybridge.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>LGK002</PlaceID>
+         <Name>Kota Mahsuri</Name>
+         <City>Langkawi</City>
+         <State>Kedah</State>
+         <Description>Step into Langkawi’s most legendary story in this traditional complex.</Description>
+         <OpeningHours>Daily: 9:00 AM – 6:00 PM (Theatre: Fri 3:30 PM, Sat 3:00 PM; holidays include Sun)</OpeningHours>
+         <Category>Cultural</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM20</Price>
+         <Image>images/LKW_kotaMahsuri.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>LGK003</PlaceID>
+         <Name>Tanjung Rhu Beach</Name>
+         <City>Langkawi</City>
+         <State>Kedah</State>
+         <Description>Relax on Langkawi’s most beautiful white-sand beach with clear blue water.</Description>
+         <OpeningHours>Open 24 hours</OpeningHours>
+         <Category>Recreational</Category>
+         <Ticket>Yes</Ticket>
+         <Price>Free</Price>
+         <Image>images/LKW_tanjungRhu.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>MLK001</PlaceID>
+         <Name>Jonker Street</Name>
+         <City>Melaka</City>
+         <State>Melaka</State>
+         <Description>Walk Melaka’s famous street full of culture, food, and weekend night markets.</Description>
+         <OpeningHours>Shops: 10:00 AM – 6:00 PM | Market: Fri–Sun 6:00 PM – 12:00 AM</OpeningHours>
+         <Category>Cultural</Category>
+         <Ticket>Yes</Ticket>
+         <Price>Free</Price>
+         <Image>images/MLK_jonker.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>MLK002</PlaceID>
+         <Name>A Famosa</Name>
+         <City>Melaka</City>
+         <State>Melaka</State>
+         <Description>Visit the remains of a Portuguese fort and relive Melaka’s colonial history.</Description>
+         <OpeningHours>9:00 AM – 5:30 PM</OpeningHours>
+         <Category>Historical</Category>
+         <Ticket>Yes</Ticket>
+         <Price>Free</Price>
+         <Image>images/MLK_Afamosa.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>MLK003</PlaceID>
+         <Name>Maritime Museum</Name>
+         <City>Melaka</City>
+         <State>Melaka</State>
+         <Description>Board a ship-shaped museum to explore Melaka’s trading past.</Description>
+         <OpeningHours>Mon–Thu: 9:00 AM – 5:00 PM | Fri: 9:00 AM – 6:30 PM | Sat–Sun: 9:00 AM – 7:00 PM</OpeningHours>
+         <Category>Educational</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM10</Price>
+         <Image>images/MLK_museum.jpg</Image>
+      </Attraction>
+   </Region>
+
+   <Region>
+      <RegionName>East Malaysia</RegionName>
+      <Attraction>
+         <PlaceID>SWK004</PlaceID>
+         <Name>Annah Rais Longhouse</Name>
+         <City>Bau</City>
+         <State>Sarawak</State>
+         <Description>Experience Bidayuh traditions in a real longhouse village near Kuching.</Description>
+         <OpeningHours>9:00 AM – 4:00 PM</OpeningHours>
+         <Category>Cultural</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM30</Price>
+         <Image>images/SWK_annahRais.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SBH002</PlaceID>
+         <Name>Mantanani Island</Name>
+         <City>Kota Belud</City>
+         <State>Sabah</State>
+         <Description>Escape to crystal-clear waters and tranquil beaches on this hidden Sabah island.</Description>
+         <OpeningHours>8:00 AM – 4:00 PM</OpeningHours>
+         <Category>Nature</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM180</Price>
+         <Image>images/SBH_mantanani.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SBH003</PlaceID>
+         <Name>Stand-Up Paddleboarding</Name>
+         <City>Kota Kinabalu</City>
+         <State>Sabah</State>
+         <Description>Enjoy calm waves and scenic paddling along Kota Kinabalu’s coast.</Description>
+         <OpeningHours>7:00 AM – 6:00 PM</OpeningHours>
+         <Category>Recreational</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM80</Price>
+         <Image>images/SBH_tanjungAru.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SWK001</PlaceID>
+         <Name>Sarawak Cultural Village</Name>
+         <City>Kuching</City>
+         <State>Sarawak</State>
+         <Description>See Sarawak’s ethnic cultures brought to life in this open-air museum.</Description>
+         <OpeningHours>9:00 AM – 5:00 PM</OpeningHours>
+         <Category>Cultural</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM50</Price>
+         <Image>images/SWK_SCV.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SWK002</PlaceID>
+         <Name>Niah Caves</Name>
+         <City>Miri</City>
+         <State>Sarawak</State>
+         <Description>Explore prehistoric caves with ancient paintings and archaeological wonders.</Description>
+         <OpeningHours>Mon–Fri: 8:00 AM – 6:00 PM | Weekends: 9:00 AM – 3:00 PM</OpeningHours>
+         <Category>Adventure</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM20</Price>
+         <Image>images/SWK_niahCaves.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SWK003</PlaceID>
+         <Name>Semenggoh Wildlife Centre</Name>
+         <City>Padawan</City>
+         <State>Sarawak</State>
+         <Description>Catch a glimpse of orangutans roaming free in a protected reserve.</Description>
+         <OpeningHours>8:00–10:00 AM, 2:00–4:00 PM</OpeningHours>
+         <Category>Nature</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM10</Price>
+         <Image>images/SWK_semenggoh.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SBH004</PlaceID>
+         <Name>Sepilok Orangutan Centre</Name>
+         <City>Sandakan</City>
+         <State>Sabah</State>
+         <Description>Meet rescued orangutans at Sabah’s famous rehabilitation sanctuary.</Description>
+         <OpeningHours>9:00 AM – 4:00 PM</OpeningHours>
+         <Category>Nature</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM30</Price>
+         <Image>images/SBH_sepilok.jpg</Image>
+      </Attraction>
+
+      <Attraction>
+         <PlaceID>SBH001</PlaceID>
+         <Name>Bohey Dulang Island</Name>
+         <City>Semporna</City>
+         <State>Sabah</State>
+         <Description>Hike up to panoramic island views and discover coral-filled lagoons.</Description>
+         <OpeningHours>8:00 AM – 5:00 PM</OpeningHours>
+         <Category>Adventure</Category>
+         <Ticket>Yes</Ticket>
+         <Price>RM100</Price>
+         <Image>images/SBH_boheyDulang.jpg</Image>
+      </Attraction>
+   </Region>
+</Attractions>

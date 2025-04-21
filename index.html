@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Malaysian Tourist Attractions Directory - Explore attractions across Malaysia">
+    <title>Tourist Attraction Directory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <h1>Tourist Attraction Directory</h1>
+
+    <div class="filter-container">
+        <div class="filter-group">
+            <h3>Filter Options</h3>
+            <div class="filter-menu">
+                <div class="filter-section">
+                    <label for="stateFilter">State:</label>
+                    <select id="stateFilter" onchange="filterAttractions(this.value, 'state')">
+                        <option value="All">All States</option>
+                        <optgroup label="East Malaysia">
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Sabah">Sabah</option>
+                        </optgroup>
+                        <optgroup label="West Malaysia">
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Melaka">Melaka</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <label for="cityFilter">City:</label>
+                    <select id="cityFilter" onchange="filterAttractions(this.value, 'city')">
+                        <option value="All">All Cities</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <label for="categoryFilter">Group By:</label>
+                    <select id="categoryFilter" onchange="filterAttractions(this.value, 'category')">
+                        <option value="All">All Categories</option>
+                        <option value="Recreational">Recreational</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Nature">Nature</option>
+                        <option value="Educational">Educational</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Historical">Historical</option>
+                    </select>
+                </div>
+
+                <div class="filter-section">
+                    <button id="resetFilters" class="reset-button" onclick="resetFilters()">Reset Filters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="attractionContainer" class="attraction-grid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

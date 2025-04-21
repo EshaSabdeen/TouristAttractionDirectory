@@ -1,0 +1,597 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.filter-container {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1em;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+.filter-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-section label {
+    color: #555;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 0.8em;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+select option {
+    padding: 10px;
+}
+
+select optgroup {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+select optgroup option {
+    font-weight: normal;
+    color: #333;
+    padding-left: 15px;
+}
+
+/* Style for disabled state options in city filter */
+select option:disabled {
+    color: #4CAF50;
+    font-weight: bold;
+    font-style: normal;
+    background-color: white;
+}
+
+#attractionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.region-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.region-header {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.states-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.state-section {
+    width: 100%;
+}
+
+.state-header {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-left: 4px solid #4CAF50;
+}
+
+.state-attractions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.attraction {
+    width: 100%;
+    max-width: 300px;
+    grid-column: span 1;
+}
+
+.attraction-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.attraction-card:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+.attraction-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.attraction-card:focus::after {
+    border-color: #4CAF50;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.info-container {
+    padding: 15px;
+    position: relative;
+}
+
+.info-container h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.category {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.details {
+    background: #f8f9fa;
+    padding: 0 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.details p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.attraction-details {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    padding: 0 15px;
+    background: white;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.attraction-card.expanded .attraction-details {
+    max-height: none;
+    padding: 15px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.detail-section {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.detail-section h3 {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.detail-section p {
+    margin: 0;
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+    word-break: break-word;
+    hyphens: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.gallery-thumbnail {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.gallery-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.error {
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    margin: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.close-modal {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.attraction-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.modal-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.modal-opening-hours,
+.modal-price {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.modal-opening-hours::before {
+    content: "🕒 ";
+}
+
+.modal-price::before {
+    content: "💰 ";
+}
+
+.modal-footer {
+    margin-top: 20px;
+}
+
+.modal-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Remove unused classes */
+.image-gallery,
+.gallery-thumbnail,
+.gallery-thumbnail:hover,
+.additional-images,
+.additional-image {
+    display: none;
+}
+
+/* Consolidated Media Queries */
+@media (max-width: 1024px) {
+    .state-attractions {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 15px;
+    }
+    
+    .filter-menu {
+        flex-direction: column;
+    }
+    
+    .state-attractions {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 15% auto;
+        padding: 15px;
+    }
+    
+    .modal-image {
+        max-height: 300px;
+    }
+    
+    .modal-thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .info-container h3 {
+        font-size: 1.1em;
+    }
+    
+    .details {
+        padding: 0 10px;
+    }
+    
+    .details p {
+        font-size: 0.85em;
+    }
+    
+    .modal-body {
+        padding: 10px;
+    }
+    
+    .attraction-info {
+        padding: 10px;
+    }
+    
+    .modal-description {
+        font-size: 14px;
+    }
+    
+    .modal-opening-hours,
+    .modal-price {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 100%;
+        margin: 20% auto;
+        padding: 10px;
+    }
+    
+    .modal-image {
+        max-height: 250px;
+    }
+    
+    .modal-thumbnail {
+        width: 50px;
+        height: 35px;
+    }
+    
+    .modal-title {
+        font-size: 1.2em;
+    }
+}
+
+/* Accessibility Improvements */
+select:focus,
+.attraction-card:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+.attraction-details p {
+    text-align: justify;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.additional-image {
+    width: calc(50% - 5px);
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .additional-image {
+        width: 100%;
+    }
+}
+
+.attraction-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reset-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+    width: auto;
+    display: inline-block;
+    margin-right: auto;
+}
+
+.reset-button:hover {
+    background-color: #45a049;
+}
+
+.filter-section:last-child {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+} 
